@@ -5,7 +5,6 @@ use dioxus::prelude::*;
 pub fn Home() -> Element {
     rsx! {
         Title {}
-        // Hero {}
         Echo {}
     }
 }

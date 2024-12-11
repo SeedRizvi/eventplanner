@@ -1,3 +1,5 @@
+use std::{thread, time::Duration};
+
 use dioxus::prelude::*;
 
 use components::Navbar;
@@ -21,17 +23,16 @@ const MAIN_CSS: Asset = asset!("/assets/styling/main.css");
 
 fn main() {
     dioxus::launch(App);
+    println!("Hello after launch!");
 }
 
 #[component]
 fn App() -> Element {
     // Build cool things ✌️
-
     rsx! {
         // Global app resources
         document::Link { rel: "icon", href: FAVICON }
         document::Link { rel: "stylesheet", href: MAIN_CSS }
-
 
         Router::<Route> {}
     }

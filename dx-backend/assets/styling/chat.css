@@ -1,23 +1,22 @@
-#echo {
+#chat {
   width: 360px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
-  background-color: #1e222d;
+  background-color: #d0d9f0;
   padding: 20px;
   border-radius: 10px;
 }
 
-#echo>h4 {
-  margin: 0px 0px 15px 0px;
+#chat>h2 {
+  margin: 0px 0px 25px 0px;
+  color:rgb(79, 25, 129);
 }
 
-
-#echo>input {
+#chat>input {
   border: none;
   border-bottom: 1px white solid;
   background-color: transparent;
-  color: #ffffff;
   transition: border-bottom-color 0.2s ease;
   outline: none;
   display: block;
@@ -25,10 +24,12 @@
   width: 100%;
 }
 
-#echo>input:focus {
+#chat>input:focus {
   border-bottom-color: #6d85c6;
 }
 
-#echo>p {
+#chat>p {
   margin: 20px 0px 0px auto;
+  font-weight: 550;
+  color: rgb(79, 25, 129);
 }
